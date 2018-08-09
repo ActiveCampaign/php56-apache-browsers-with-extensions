@@ -13,7 +13,7 @@ RUN sudo apt-get install bash geoip-database geoip-database-extra libc-client-de
 RUN sudo pecl install apcu geoip memcache memcached-2.2.0 redis
 
 # Enable PECL extensions
-RUN sudo docker-php-ext-enable geoip memcache memcached redis
+RUN sudo docker-php-ext-enable apcu geoip memcache memcached redis
 
 # Install PHP extensions
 RUN sudo docker-php-ext-install mcrypt opcache pdo_mysql soap tidy bcmath
