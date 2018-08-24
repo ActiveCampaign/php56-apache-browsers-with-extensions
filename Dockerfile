@@ -16,4 +16,4 @@ RUN sudo pecl install apcu geoip memcache memcached-2.2.0 redis
 RUN sudo docker-php-ext-enable geoip memcache memcached redis
 
 # Install PHP extensions
-RUN sudo docker-php-ext-install mcrypt opcache pdo_mysql soap tidy bcmath
+RUN sudo docker-php-ext-install mcrypt opcache pdo_mysql soap tidy bcmath sockets
