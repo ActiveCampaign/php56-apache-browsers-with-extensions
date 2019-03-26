@@ -1,5 +1,5 @@
 # Base image on CircleCI's image for PHP 5.6
-FROM circleci/php:5.6-apache-browsers
+FROM circleci/php:5.6-apache-jessie-browsers
 
 MAINTAINER Tim Rourke <trourke@activecampaign.com>
 
