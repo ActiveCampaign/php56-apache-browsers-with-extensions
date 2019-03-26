@@ -1,4 +1,4 @@
-# Base image on CircleCI's image for PHP 5.6
+# Base image on CircleCI's image for PHP 5.6. Jessie is out date.
 FROM circleci/php:5.6-apache-browsers
 
 MAINTAINER Tim Rourke <trourke@activecampaign.com>
