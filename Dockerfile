@@ -10,10 +10,10 @@ RUN sudo apt-get update && sudo apt-get upgrade
 RUN sudo apt-get install bash geoip-database geoip-database-extra libc-client-dev libgeoip-dev libicu-dev libkrb5-dev libmcrypt-dev libmemcached-dev libpng-dev libtidy-dev libxml2-dev mysql-client wget
 
 # Install PECL extensions
-RUN sudo pecl install apcu geoip memcache memcached-2.2.0 redis
+RUN sudo pecl install apcu-4.0.10 geoip memcache memcached-2.2.0 redis-4.3.0
 
 # Enable PECL extensions
-RUN sudo docker-php-ext-enable geoip memcache memcached redis
+RUN sudo docker-php-ext-enable apcu geoip memcache memcached redis
 
 # Install PHP extensions
 RUN sudo docker-php-ext-install mcrypt opcache pdo_mysql soap tidy bcmath
